@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://gitlab.ustock.cc:5253/stocks/MLeaksFinder'
+  s.homepage         = 'https://gitlab.webullbroker.com:5253/stocks/MLeaksFinder'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tank' => 'tk@webull.com' }
-  s.source           = { :git => 'ssh://git@gitlab.ustock.cc:5153/stocks/MLeaksFinder.git', :tag => s.version.to_s }
+  s.source           = { :git => 'ssh://git@gitlab.webullbroker.com:5153/stocks/MLeaksFinder.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
