@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="235-ro-3eh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="PRb-9q-xSa">
+            <objects>
+                <navigationController id="235-ro-3eh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qYm-vy-tjB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mcX-eY-lHv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9H-vj-4Y0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1157" y="-37"/>
+        </scene>
+        <!--MLeaksFinder Example-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MLeaksFinder_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ONu-K5-U9s">
+                                <rect key="frame" x="122.33333333333333" y="410.33333333333331" width="148.66666666666669" height="100.66666666666669"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25c-6w-ZRl">
+                                        <rect key="frame" x="0.0" y="0.0" width="148.66666666666666" height="34.333333333333336"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push (Leaks)"/>
+                                        <connections>
+                                            <segue destination="fS8-z9-eTY" kind="show" id="SFU-KI-m3j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpu-xy-gMQ">
+                                        <rect key="frame" x="0.0" y="66.333333333333371" width="148.66666666666666" height="34.333333333333343"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push (No Leaks)"/>
+                                        <connections>
+                                            <segue destination="qzw-ND-jVJ" kind="show" id="SpP-in-dID"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ONu-K5-U9s" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="joT-5E-aDY"/>
+                            <constraint firstItem="ONu-K5-U9s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="old-Tq-SoV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MLeaksFinder Example" id="Oet-Fu-hcO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294" y="-37"/>
+        </scene>
+        <!--No Leaks-->
+        <scene sceneID="JlE-xH-vb2">
+            <objects>
+                <viewController id="qzw-ND-jVJ" customClass="NoLeaksViewController" customModule="MLeaksFinder_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6GN-2y-ztW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5v-0l-qFD">
+                                <rect key="frame" x="16" y="432" width="353" height="57.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="There will be no memory leak warning after this page returns.">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemGreenColor"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yag-fJ-ugS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h5v-0l-qFD" firstAttribute="centerY" secondItem="Yag-fJ-ugS" secondAttribute="centerY" id="1G0-3x-BgA"/>
+                            <constraint firstItem="h5v-0l-qFD" firstAttribute="leading" secondItem="Yag-fJ-ugS" secondAttribute="leading" constant="16" id="IU1-tX-GC2"/>
+                            <constraint firstItem="Yag-fJ-ugS" firstAttribute="trailing" secondItem="h5v-0l-qFD" secondAttribute="trailing" constant="24" id="y9z-ei-wly"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="No Leaks" id="QlT-DC-PZl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlK-9o-c8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="311"/>
+        </scene>
+        <!--Leaks-->
+        <scene sceneID="Fqe-9d-izB">
+            <objects>
+                <viewController id="fS8-z9-eTY" customClass="LeaksViewController" customModule="MLeaksFinder_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A7b-qK-IHr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLk-m2-7Cb">
+                                <rect key="frame" x="20" y="432" width="353" height="57.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="After this page pops up, a memory leak warning will appear.">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemRedColor"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ecp-Yi-YYF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wLk-m2-7Cb" firstAttribute="centerY" secondItem="Ecp-Yi-YYF" secondAttribute="centerY" id="7qq-Nf-9yZ"/>
+                            <constraint firstItem="wLk-m2-7Cb" firstAttribute="leading" secondItem="Ecp-Yi-YYF" secondAttribute="leading" constant="20" id="Pfu-nT-QpB"/>
+                            <constraint firstItem="wLk-m2-7Cb" firstAttribute="trailing" secondItem="Ecp-Yi-YYF" secondAttribute="trailing" constant="-20" id="rl5-hy-9nc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Leaks" id="F0n-Qk-zZv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00r-u4-rfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="-370"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

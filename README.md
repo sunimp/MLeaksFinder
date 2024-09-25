@@ -1,28 +1,33 @@
 # MLeaksFinder
 
-[![CI Status](https://img.shields.io/travis/Tank/MLeaksFinder.svg?style=flat)](https://travis-ci.org/Tank/MLeaksFinder)
-[![Version](https://img.shields.io/cocoapods/v/MLeaksFinder.svg?style=flat)](https://cocoapods.org/pods/MLeaksFinder)
-[![License](https://img.shields.io/cocoapods/l/MLeaksFinder.svg?style=flat)](https://cocoapods.org/pods/MLeaksFinder)
-[![Platform](https://img.shields.io/cocoapods/p/MLeaksFinder.svg?style=flat)](https://cocoapods.org/pods/MLeaksFinder)
-
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, open `MLeaksFinder-Example.xcodeproj` file.
 
 ## Requirements
 
+* Xcode 15.4+
+* Swift 5.10+
+* iOS 14.0+
+
 ## Installation
 
-MLeaksFinder is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### SPM (Recommended):
+
+Add dependency:
+```swift
+.package(url: "https://gitlab.webullbroker.com:5253/stocks/MLeaksFinder.git", from: "2.0.0")
+```
+
+### CocoaPods:
 
 ```ruby
-pod 'MLeaksFinder'
+pod 'MLeaksFinder', '>= 2.0.0'
 ```
 
 ## Author
 
-Tank, tk@webull.com
+Sun, yangguang@webull.com
 
 ## License
 
