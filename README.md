@@ -12,17 +12,19 @@ To run the example project, clone the repo, open `MLeaksFinder-Example.xcodeproj
 
 ## Installation
 
-### SPM (Recommended):
+### SPM:
 
-Add dependency:
+Add dependency using HTTPS:
 ```swift
-.package(url: "https://gitlab.webullbroker.com:5253/stocks/MLeaksFinder.git", from: "2.0.0")
+dependencies: [
+    .package(url: "https://gitlab.webullbroker.com:5253/stocks/MLeaksFinder.git", branch: "spm")
+]
 ```
-
-### CocoaPods:
-
-```ruby
-pod 'MLeaksFinder', '>= 2.0.0'
+or SSH:
+```swift
+dependencies: [
+    .package(url: "ssh://git@gitlab.webullbroker.com:5153/stocks/MLeaksFinder.git", branch: "spm")
+]
 ```
 
 ## Author
