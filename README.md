@@ -12,18 +12,11 @@ To run the example project, clone the repo, open `MLeaksFinder-Example.xcodeproj
 
 ## Installation
 
-### SPM:
+### Swift Package Manager:
 
-Add dependency using HTTPS:
 ```swift
 dependencies: [
-    .package(url: "https://gitlab.webullbroker.com:5253/stocks/MLeaksFinder.git", branch: "spm")
-]
-```
-or SSH:
-```swift
-dependencies: [
-    .package(url: "ssh://git@gitlab.webullbroker.com:5153/stocks/MLeaksFinder.git", branch: "spm")
+    .package(url: "https://github.com/sunimp/MLeaksFinder.git", .upToNextMajor(from: "0.1.0"))
 ]
 ```
 
