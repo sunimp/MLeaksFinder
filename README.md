@@ -27,10 +27,6 @@ dependencies: [
 ]
 ```
 
-## Author
-
-Sun, yangguang@webull.com
-
 ## License
 
 MLeaksFinder is available under the MIT license. See the LICENSE file for more info.
